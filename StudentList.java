@@ -3,6 +3,36 @@ import java.text.*;
 import java.util.*;
 public class StudentList {
 	public static void main(String[] args) {
+		// ⿡ First: check if argument is provided
+    if (args.length == 0) {
+        System.out.println("Please provide a, r, ?, +, or c argument");
+        return;
+    }
+
+    // ⿢ Then: put the LOGIC HERE
+    String command = args[0];
+
+    if (command.equals("a")) {
+        // LIST ALL STUDENTS
+    }
+    else if (command.equals("r")) {
+        // RANDOM STUDENT
+    }
+    else if (command.startsWith("+")) {
+        // ADD STUDENT
+    }
+    else if (command.startsWith("?")) {
+        // SEARCH STUDENT
+    }
+    else if (command.equals("c")) {
+        // COUNT STUDENTS
+    }
+    else {
+        // INVALID COMMAND
+        System.out.println("Invalid argument! Use a, r, ?, +, or c");
+}
+
+
 
 //		Check arguments
 		if(args[0].equals("a")) {
@@ -90,6 +120,6 @@ public class StudentList {
 			System.out.println(count +" word(s) found " + a.length);
 			} catch (Exception e){} 
 			System.out.println("Data Loaded.");				
-		}
+			}
 	}
 }
