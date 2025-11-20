@@ -12,28 +12,6 @@ public class StudentList {
     // ⿢ Then: put the LOGIC HERE
     String command = args[0];
 
-    if (command.equals("a")) {
-        // LIST ALL STUDENTS
-    }
-    else if (command.equals("r")) {
-        // RANDOM STUDENT
-    }
-    else if (command.startsWith("+")) {
-        // ADD STUDENT
-    }
-    else if (command.startsWith("?")) {
-        // SEARCH STUDENT
-    }
-    else if (command.equals("c")) {
-        // COUNT STUDENTS
-    }
-    else {
-        // INVALID COMMAND
-        System.out.println("Invalid argument! Use a, r, ?, +, or c");
-}
-
-
-
 //		Check arguments
 		if(args[0].equals("a")) {
 			System.out.println("Loading data ...");			
@@ -121,5 +99,9 @@ public class StudentList {
 			} catch (Exception e){} 
 			System.out.println("Data Loaded.");				
 			}
+			else {
+			   // INVALID COMMAND
+			   System.out.println("Invalid argument! Use a, r, ?, +, or c");
+	   }
 	}
 }
